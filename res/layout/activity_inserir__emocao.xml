@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inserir_Emocao">
+
+    <TextView
+        android:id="@+id/TextNovaEmocao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira uma nova Emoção"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/NomeEmocao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da emoção"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNovaEmocao"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ValorEmocao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor da emoção"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomeEmocao"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnNovaEmocao"
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Inserir"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValorEmocao"
+        />
+
+</android.support.constraint.ConstraintLayout>

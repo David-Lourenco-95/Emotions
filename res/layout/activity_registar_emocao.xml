@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistarEmocao">
+
+    <TextView
+        android:id="@+id/TextoRegistar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registe quais as atividades de praticou!"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/emocoes"
+        android:layout_marginTop="35dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoRegistar">
+
+        <RadioButton
+            android:id="@+id/infeliz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corrida"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/desesperado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desesperado"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raiva"
+            android:text="Raiva"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/triste"
+            android:text="Triste"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nervoso"
+            android:text="Nervoso"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/apatico"
+            android:text="Apático"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animado"
+            android:text="Animado"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alegre"
+            android:text="Alegre"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entusiasmo"
+            android:text="Entusiasmo"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/apaixonado"
+            android:text="Apaixonado"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Feliz"
+            android:text="Feliz"
+            android:layout_marginLeft="16dp"
+            android:textSize="18dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnregistar"
+        android:text="Registar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emocoes"/>
+
+</android.support.constraint.ConstraintLayout>

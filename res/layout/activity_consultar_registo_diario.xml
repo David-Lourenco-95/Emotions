@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarRegistoDiario">
+
+    <CalendarView
+        android:id="@+id/Calendario"
+        android:layout_width="match_parent"
+        android:layout_height="304dp">
+
+    </CalendarView>
+
+    <TextView
+        android:id="@+id/emocao"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Emoção MediaDiaria"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/emocaoSemanal"
+        app:layout_constraintTop_toBottomOf="@+id/Calendario" />
+
+
+    <TextView
+        android:id="@+id/media"
+        android:hint="Média Diaria"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toLeftOf="@+id/mediaSemanal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emocao"
+        />
+
+
+    <TextView
+        android:id="@+id/emocaoSemanal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Emoção Semanal"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@+id/emocao"
+        app:layout_constraintRight_toLeftOf="@+id/emocao2"
+        app:layout_constraintTop_toBottomOf="@+id/Calendario" />
+
+    <TextView
+        android:id="@+id/mediaSemanal"
+        android:hint="Média Semanal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toLeftOf="@+id/media2"
+        app:layout_constraintLeft_toRightOf="@+id/media"
+        app:layout_constraintTop_toBottomOf="@+id/emocaoSemanal"
+        />
+
+    <TextView
+        android:id="@+id/emocao2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Emoção Mensal"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/emocaoSemanal"
+        app:layout_constraintTop_toBottomOf="@+id/Calendario"/>
+
+    <TextView
+        android:id="@+id/media2"
+        android:hint="Média Mensal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mediaSemanal"
+        app:layout_constraintTop_toBottomOf="@+id/emocao2"
+        />
+
+    <Button
+        android:id="@+id/detalhe"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Detalhes"
+        android:textSize="14dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media"/>
+
+</android.support.constraint.ConstraintLayout>
